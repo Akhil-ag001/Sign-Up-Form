@@ -1,0 +1,95 @@
+html{
+    font-family: 'Dongle', 'sans-serif';
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(71, 75, 79, 0.17);
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+#side-image{
+    background-image: url(Images/Image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: calc(0.667 * 100vh);
+}
+
+#side-text{
+    padding-top: 2.5em;
+    width: auto;
+    background-clip: content-box;
+    text-align: center;
+    font-size: 6em;
+    background-color: #8d99ae;
+    color: white;
+    opacity: 0.8;
+    
+}
+
+.content{
+    padding: 1em;
+    font-size: 2rem;
+}
+
+ul{
+    padding: 2em;
+    border: 2px solid #aaa;
+    border-radius: 15px;
+    box-shadow: 5px gray;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+}
+
+input{
+    width: 14.5em;
+    padding: 3px;
+}
+button{
+    width: 175px;
+    height: 50px;
+    font-size: 0.75em;
+    border: 2px solid #222;
+    border-radius: 20px;
+    background-color: teal;
+    color: white;
+}
+
+#error-msg{
+    font-size: inherit;
+    color: red;
+    height: 2em;
+    width: 15em;
+}
+
+input:valid{
+    border: 1px solid #888;
+}
+
+input:invalid{
+    border: 1.5px solid rgb(255, 0, 0);
+}
+
+input:focus{
+    border: 2px solid black;
+}

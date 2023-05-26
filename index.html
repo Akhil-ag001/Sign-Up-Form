@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section class="image">
     <div id="side-image">
         <div id="side-text">
-
+            Dream Team
         </div>
     </div>
-    
+    </section>
+
+    <section class="content">
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, doloremque. Quidem dignissimos quibusdam consequatur aperiam totam ipsum, excepturi omnis impedit repellendus deserunt quia ipsa suscipit. Harum explicabo sapiente ex eaque!
+        <br>
+        WE WIN THESE
+    </div>
     <form action="#" method="post">
     <ul>
         <li>
-            <label for="first_name">First Name </label>
-            <input type="text" name="First name" id="first_name">
+            <label for="first_name">First Name*</label>
+            <input type="text" name="First name" id="first_name" required>
         </li>
         <li>
             <label for="last_name">Last Name</label>
@@ -25,24 +37,30 @@
         </li>
         <li>
             <label for="telephone">Telephone No.</label>
-            <input type="tel" name="Telephone" id="telephone">
+            <input type="tel" name="Telephone" id="telephone"
+            pattern="(\d{5}) ?(\d{5})"
+            placeholder="98281 85265"
+            title="Required format- 12345 67890">
         </li>
         <li>
             <label for="user_email">Email ID</label>
             <input type="email" name="Email id" id="user_email">
         </li>
         <li>
-            <label for="user_password">Password</label>
-            <input type="password" name="Password" id="user_password">
+            <label for="user_password">Password*</label>
+            <input type="password" name="Password" id="user_password" required>
         </li>
         <li>
-            <label for="confirm_password">Confirm Password</label>
-            <input type="password" name="Password check" id="confirm_password">
-        </li>
-        <li>
-            <button type="submit">SIgn Up</button>
+            <label for="confirm_password">Confirm Password*</label>
+            <input type="password" name="Password check" id="confirm_password" required>
+            <div id="error-msg"></div>
         </li>
     </ul>
+        <button type="submit">SIgn Up</button>
     </form>
+    <div>Already a user? <a href="#">login now</a></div>
+    </section>
+
+    <script src="error.js"></script>
 </body>
 </html>
